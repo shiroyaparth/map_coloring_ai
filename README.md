@@ -1,68 +1,166 @@
-# AI Map Coloring
 
-This project is an interactive **Map Coloring Game** built using Python and Pygame.
+# 🎨 AI Map Coloring using Pygame
 
-The program generates a random map using Voronoi diagrams and solves the map coloring problem using Artificial Intelligence techniques.
-
-The AI uses Backtracking and MRV (Minimum Remaining Value) heuristic to color the map such that no neighboring regions have the same color.
+An interactive Python project that demonstrates **Artificial Intelligence concepts** using a **Map Coloring problem**.
+The system generates random maps and solves them using an AI algorithm based on **Backtracking + MRV (Minimum Remaining Values) heuristic**.
 
 ---
 
-## Features
+## 🚀 Project Overview
 
-• Random map generation  
-• AI solving using CSP algorithm  
-• Human playable mode  
-• Zoom and drag map  
-• Difficulty levels  
-• Real-time AI solving visualization  
+This project simulates the classic **Map Coloring Problem**, where:
 
----
+* A map is divided into multiple regions
+* Each region must be colored
+* **No two adjacent regions can have the same color**
 
-## Technologies Used
+The project supports:
 
-Python  
-Pygame  
-NumPy  
-SciPy  
+* 🤖 AI-based automatic solving
+* 🧑 Human interactive coloring
+* 🔍 Zoom & drag map navigation
+* 🎯 Difficulty levels
 
 ---
 
-## How to Run
+## 🧠 AI Concepts Used
 
-Install dependencies:
+* **Backtracking Algorithm**
+* **MRV Heuristic (Minimum Remaining Values)**
+* Constraint Satisfaction Problem (CSP)
+* Graph-based neighbor relationships
 
+---
+
+## 🗺️ How It Works
+
+1. Random points are generated
+2. A **Voronoi diagram** is created (map regions)
+3. Neighbor relationships are calculated
+4. AI assigns colors while satisfying constraints:
+
+   * No neighboring regions share the same color
+
+---
+
+## 🎮 Features
+
+* 🎨 4-color map coloring (Red, Green, Blue, Yellow)
+* 🤖 AI Solver with step visualization
+* 🧑 Manual play mode
+* 🔍 Zoom in/out using mouse wheel
+* 🖱️ Drag map using right click
+* ⚙️ Difficulty levels:
+
+  * Easy
+  * Medium
+  * Hard
+* ⏱️ Time tracking (AI vs Human)
+* 📊 Step counter for AI
+
+---
+
+## 🎹 Controls
+
+| Key              | Action               |
+| ---------------- | -------------------- |
+| 1-4              | Select color         |
+| SPACE            | Run AI Solver        |
+| H                | Switch to Human Mode |
+| A                | Switch to AI Mode    |
+| R                | Reset current map    |
+| N                | Generate new map     |
+| 5                | Easy difficulty      |
+| 6                | Medium difficulty    |
+| 7                | Hard difficulty      |
+| Mouse Wheel      | Zoom                 |
+| Right Click Drag | Move map             |
+
+---
+
+## 📦 Requirements
+
+Install dependencies using:
+
+```bash
 pip install -r requirements.txt
+```
 
-Run the program:
+### Required Libraries:
 
-python map_coloring_ai.py
-
----
-
-## Controls
-
-1 - Red  
-2 - Green  
-3 - Blue  
-4 - Yellow  
-
-SPACE - AI Solve  
-H - Human Mode  
-A - AI Mode  
-
-5 - Easy  
-6 - Medium  
-7 - Hard  
-
-Mouse Wheel - Zoom  
-Right Click Drag - Move Map  
+* pygame
+* numpy
+* scipy
 
 ---
 
-## AI Concepts Used
+## ▶️ How to Run
 
-Constraint Satisfaction Problem (CSP)  
-Backtracking Search  
-MRV Heuristic  
-Graph Coloring
+```bash
+python main.py
+```
+
+---
+
+## 🧪 Example Workflow
+
+1. Start the program
+2. Choose:
+
+   * Human mode → manually color regions
+   * AI mode → press SPACE to auto solve
+3. Watch how AI fills the map step-by-step
+4. Compare AI time vs your time 😄
+
+---
+
+## 📁 Project Structure
+
+```
+AI-Map-Coloring/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+```
+
+---
+
+## 💡 Future Improvements
+
+* Forward Checking algorithm
+* Arc Consistency (AC-3)
+* Better UI/animations
+* Save & load maps
+* More color options
+
+---
+
+## 🎯 Learning Outcome
+
+This project helps in understanding:
+
+* Constraint Satisfaction Problems (CSP)
+* Heuristic optimization techniques
+* Real-world application of AI
+* Visualization of algorithms
+
+---
+
+## 🙌 Conclusion
+
+This project is a great combination of:
+
+* 🎮 Interactive UI (Pygame)
+* 🧠 AI Algorithms
+* 📊 Problem-solving logic
+
+Perfect for **students, mini-projects, and portfolio showcase** 🚀
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ on GitHub and share it!
+
+---
